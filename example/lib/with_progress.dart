@@ -32,7 +32,7 @@ class _WithProgressState extends State<WithProgress> {
     await DefaultCacheManager().emptyCache();
 
     PDFDocument.fromURLWithDownloadProgress(
-      'https://www.africau.edu/images/default/sample.pdf',
+      'http://10.207.252.73:8150/mdealer1/services/mdealerprofilemanagement/api/public/temp-file/VSALE_CHUANHOA_DIDONG_HDSD.pdf',
       downloadProgress: (downloadProgress) => setState(() {
         this.downloadProgress = downloadProgress;
       }),
@@ -71,7 +71,7 @@ class _WithProgressState extends State<WithProgress> {
       document = await PDFDocument.fromAsset('assets/sample2.pdf');
     } else if (value == 2) {
       document = await PDFDocument.fromURL(
-        "https://www.africau.edu/images/default/sample.pdf",
+        "http://10.207.252.73:8150/mdealer1/services/mdealerprofilemanagement/api/public/temp-file/VSALE_CHUANHOA_DIDONG_HDSD.pdf",
 
         /* cacheManager: CacheManager(
           Config(
